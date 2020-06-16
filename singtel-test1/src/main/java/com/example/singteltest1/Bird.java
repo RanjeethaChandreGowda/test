@@ -1,6 +1,8 @@
 package com.example.singteltest1;
 
-public class Bird extends Animal {
+public abstract class Bird extends Animal {
+
+	abstract String sound();
 
 	public String fly() {
 		return "fly";

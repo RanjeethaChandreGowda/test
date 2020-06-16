@@ -1,10 +1,9 @@
 package com.example.singteltest1;
 
-import org.springframework.boot.test.context.SpringBootTest;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 public class TestSolution {
@@ -15,16 +14,37 @@ public class TestSolution {
 		assertEquals("walk", animal.walk());
 	}
 
+	// Commenting this test method as the Bird class become the Abstract. We can use
+	// Mock framework to instantiate. Not doing it for test.
+	/*
+	 * @Test public void testBirdFly() { Bird bird = new Bird(); assertEquals("fly",
+	 * bird.fly()); }
+	 * 
+	 * @Test public void testBirdSing() { Bird bird = new Bird();
+	 * assertEquals("sing", bird.sing()); }
+	 **/
 	@Test
-	public void testBirdFly() {
-		Bird bird = new Bird();
-		assertEquals("fly", bird.fly());
+	public void testChickenSound() {
+		Bird bird = new Chicken();
+		assertEquals("Cluck Cluck", bird.sound());
 	}
 
 	@Test
-	public void testBirdSing() {
-		Bird bird = new Bird();
-		assertEquals("sing", bird.sing());
+	public void testDuckSound() {
+		Bird bird = new Duck();
+		assertEquals("Quack Quack", bird.sound());
+	}
+
+	@Test
+	public void testDuckSwim() {
+		Duck duck = new Duck();
+		assertEquals("Duck can swim", duck.swim());
+	}
+
+	@Test
+	public void testChickenFly() {
+		Bird bird = new Chicken();
+		assertEquals("Chicken can't fly because wings are clipped", bird.fly());
 	}
 
 }
