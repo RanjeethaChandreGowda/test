@@ -194,6 +194,20 @@ public class TestSolution {
 					assertEquals("Butterfly makes sound",butterFly.sound());
 					}
 				
+				@Test
+				public  void testCaterpillarFly() {
+						
+						Insect caterPillar = new Caterpillar();
+						assertEquals("Caterpillar cannot fly",caterPillar.fly());
+					}
+				
+				@Test
+				public  void testCaterpillarWalk() {
+						
+					Caterpillar caterPillar = new Caterpillar();
+					assertEquals("Caterpillar can crawl",caterPillar.walk());
+					}
+				
 
 
 

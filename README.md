@@ -3,7 +3,9 @@
 ## Solution Details
 
 Method <code>sing()</code> is implemented in the bird class
-###How did you unit test it?
+
+### How did you unit test it?
+
 Refer to <code>TestSolution</code> unit class
 The methods inside the Animal and Bird class has void methods, writing unit test on void methods only help to test the behaviour. In the problem statement example given, it only had a sys out statement. So I had modified the methods to return the value based on the operation, so we can create assertions to test the expected vs actuals.
 
@@ -22,7 +24,7 @@ Unit testing is performed to test for the expected vs actuals.
 
 Rooster class is created. Refer to <Class>Rooster.
 Composition is implemented to invoke the methods of Class<Chicken>.(Note: According to the problem statement Inheritance should not be used to access <Class>Chicken)
-Rooster is differentiated from Chicken based on the gender.Refer to <code>gender()<code>
+Rooster is differentiated from Chicken based on the gender.Refer to <code>gender()</code>
 Unit test is performed to test the results for the expected vs actuals.
 
 # 4. Can you model a parrot? We are specifically interested in three parrots, one that lived in a house with dogs one in a house with cats, the other lived on a farm next to the rooster.
@@ -31,31 +33,31 @@ Unit test is performed to test the results for the expected vs actuals.
 
 3 new classes are created for this requirement.Refer to <Class>Cat,<Class>Dog,<Class>Parrot.
 Created a one-arg constructor which takes Animal as Argument, where we can pass different types of animals to this constructor
-Refer <code>sound()<code> in <Class>Parrot
+Refer <code>sound()</code> in <Class>Parrot
 Unit test is performed to test the results for the expected vs actuals.
 
 # Section-B
 
 # 1. In addition to the birds, can you model a fish?
 
-# Solution Details
+## Solution Details
 
 Created <Class>Fish.
-Refer <code>walk(),sound(),swim()<code> of <Class>Fish
+Refer <code>walk(),sound(),swim()</code> of <Class>Fish
 Unit test is performed to verify the results.
 
 # 2. Can you specialize the fish as a Shark and as a Clownfish?
 
-# Solution Details
+## Solution Details
 
 Created <Class>ClownFish,<Class>Shark.
-<Class>ClownFish defines it’s behaviour. Refer <code>size(),color(),behaviour()<code>
-<Class>Shark defines it’s behaviour. Refer <code>size(),color(),behaviour()<code>
+<Class>ClownFish defines it’s behaviour. Refer <code>size(),color(),behaviour() </code>
+<Class>Shark defines it’s behaviour. Refer <code>size(),color(),behaviour()</code>
 Unit test is performed to test the results for the expected vs actuals.
 
 # 3. Dolphins are not exactly fish, yet, they are good swimmers
 
-# Solution Details
+## Solution Details
 
 Created <Class>Dolphin.
 Composition is implemented to invoke the methods of Class<Fish>.
@@ -65,8 +67,16 @@ Unit test is performed to verify the results of expected vs actual
 
 # 1. Can you model a butterfly?
 
-# SolutionDetails
+## SolutionDetails
 
-Created abstract class Class<Insect> with abstract method <code>fly()<code>
-Created Class<ButterFly>. Refer to <code>fly(),sound()<code>
+Created abstract class Class<Insect> with abstract method <code>fly()</code>
+Created Class<ButterFly>. Refer to <code>fly(),sound()</code>
+Unit test performed to verify the results of expected vs actual
+
+# 2. Can you optimize your model to account for the metamorphosis from caterpillar to butterfly?
+
+## SolutionDetails
+
+Created abstract class Class<Insect> with abstract method <code>fly()</code>
+Created Class<Caterpillar>. Refer to <code>fly(),walk()</code>
 Unit test performed to verify the results of expected vs actual
