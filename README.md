@@ -33,3 +33,11 @@ Unit test is performed to test the results for the expected vs actuals.
 Created a one-arg constructor which takes Animal as Argument, where we can pass different types of animals to this constructor
 Refer <code>sound()<code> in <Class>Parrot
 Unit test is performed to test the results for the expected vs actuals.
+
+# Section-B
+
+# 1. In addition to the birds, can you model a fish? # Solution Details
+
+Created <Class>Fish.
+Refer <code>walk(),sound(),swim()<code> of <Class>Fish
+Unit test is performed to verify the results.

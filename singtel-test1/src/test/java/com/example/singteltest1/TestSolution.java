@@ -8,6 +8,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 
 
+
+
 @SpringBootTest
 public class TestSolution {
 	
@@ -107,6 +109,28 @@ public class TestSolution {
 		
 		
 	}
+	
+	@Test
+	public  void testFishWalk() {
+			
+			Fish fish = new Fish();
+			assertEquals("Fish Cannot Walk",fish.walk());
+		}
+		
+		
+		@Test
+		public  void testFishSound() {
+				
+				Fish fish = new Fish();
+				assertEquals("Fish Cannot sing",fish.sound());
+			}
+		
+		@Test
+		public  void testFishSwim() {
+				
+				Fish fish = new Fish();
+				assertEquals("Fish Can Swim",fish.swim());
+			}
 
 
 }
