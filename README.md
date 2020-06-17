@@ -41,3 +41,10 @@ Unit test is performed to test the results for the expected vs actuals.
 Created <Class>Fish.
 Refer <code>walk(),sound(),swim()<code> of <Class>Fish
 Unit test is performed to verify the results.
+
+# 2. Can you specialize the fish as a Shark and as a Clownfish? #Solution Details
+
+Created <Class>ClownFish,<Class>Shark.
+<Class>ClownFish defines it’s behaviour. Refer <code>size(),color(),behaviour()<code>
+<Class>Shark defines it’s behaviour. Refer <code>size(),color(),behaviour()<code>
+Unit test is performed to test the results for the expected vs actuals.

@@ -10,6 +10,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 
 
+
+
 @SpringBootTest
 public class TestSolution {
 	
@@ -131,6 +133,52 @@ public class TestSolution {
 				Fish fish = new Fish();
 				assertEquals("Fish Can Swim",fish.swim());
 			}
+		
+		@Test
+		public  void testSharkSize() {
+				
+				Shark shark = new Shark();
+				assertEquals("Sharks are large",shark.size());
+			}
+			
+			
+			@Test
+			public  void testSharkColor() {
+					
+				Shark shark = new Shark();
+				assertEquals("Sharks are grey in color",shark.color());
+				}
+			
+			@Test
+			public  void testSharkEat() {
+					
+				Shark shark = new Shark();
+				assertEquals("Sharks eat other Fish",shark.eat());
+				}
+			
+			@Test
+			public  void testClownFishSize() {
+					
+					ClownFish clownFish = new ClownFish();
+					assertEquals("ClownFish are small",clownFish.size());
+				}
+				
+				
+				@Test
+				public  void testClownFishColor() {
+						
+					ClownFish clownFish = new ClownFish();
+					assertEquals("ClownFish are orange in color",clownFish.color());
+					}
+				
+				@Test
+				public  void testClownFishBehaviour() {
+						
+					ClownFish clownFish = new ClownFish();
+					assertEquals("ClownFish makes jokes",clownFish.behaviour());
+					}
+				
+
 
 
 }
