@@ -1,6 +1,6 @@
 package com.example.singteltest1;
 
-public class Animal {
+public abstract class Animal {
 
 	/**
 	 * Default behaviour for all animals
@@ -10,5 +10,5 @@ public class Animal {
 	public String walk() {
 		return "walk";
 	}
-
+	public abstract String sound();
 }

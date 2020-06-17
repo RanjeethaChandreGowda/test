@@ -7,14 +7,16 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 
 
+
 @SpringBootTest
 public class TestSolution {
-
-	@Test
+	
+	// Commenting this test method as the Animal class become the Abstract
+	/*@Test
 	public void testAnimalWalk() {
 		Animal animal = new Animal();
 		assertEquals("walk", animal.walk());
-	}
+	}*/
 
 	// Commenting this test method as the Bird class become the Abstract. We can use
 	// Mock framework to instantiate. Not doing it for test.
@@ -69,5 +71,42 @@ public class TestSolution {
 		Chicken chicken = new Chicken();
 		assertEquals("female", chicken.gender());
 	}
+	
+	@Test
+	public void testParrotSoundLivesWithDog() {
+		Animal animal = new Dog();
+		Parrot parrot = new Parrot(animal);
+		assertEquals("Woof, woof",parrot.sound());
+		
+		
+	}
+	
+	@Test
+	public void testParrotSoundLivesWithCat() {
+		Animal animal = new Cat();
+		Parrot parrot = new Parrot(animal);
+		assertEquals("Meow",parrot.sound());
+		
+		
+	}
+	
+	@Test
+	public void testParrotSoundLivesWithRooster() {
+		Animal animal = new Rooster();
+		Parrot parrot = new Parrot(animal);
+		assertEquals("Cock-a-doodle-doo",parrot.sound());
+		
+		
+	}
+	
+	@Test
+	public void testParrotSoundWithDuck() {
+		Animal animal = new Duck();
+		Parrot parrot = new Parrot(animal);
+		assertEquals("Quack Quack",parrot.sound());
+		
+		
+	}
+
 
 }
