@@ -5,6 +5,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+
+
 @SpringBootTest
 public class TestSolution {
 
@@ -45,6 +47,27 @@ public class TestSolution {
 	public void testChickenFly() {
 		Bird bird = new Chicken();
 		assertEquals("Chicken can't fly because wings are clipped", bird.fly());
+	}
+
+	@Test
+	public void testRoosterSound() {
+
+		Bird bird = new Rooster();
+		assertEquals("Cock-a-doodle-doo", bird.sound());
+	}
+
+	@Test
+	public void testRoosterGender() {
+
+		Rooster rooster = new Rooster();
+		assertEquals("male", rooster.gender());
+	}
+
+	@Test
+	public void testChickenGender() {
+
+		Chicken chicken = new Chicken();
+		assertEquals("female", chicken.gender());
 	}
 
 }

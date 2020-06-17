@@ -9,5 +9,9 @@ public class Chicken extends Bird {
 	public String fly() {
 		return "Chicken can't fly because wings are clipped";
 	}
+	
+	String gender() {
+		return "female";
+		}
 
 }
