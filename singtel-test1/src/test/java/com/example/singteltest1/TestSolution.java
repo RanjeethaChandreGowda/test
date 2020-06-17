@@ -7,11 +7,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 
 
-
-
-
-
-
 @SpringBootTest
 public class TestSolution {
 	
@@ -176,6 +171,13 @@ public class TestSolution {
 						
 					ClownFish clownFish = new ClownFish();
 					assertEquals("ClownFish makes jokes",clownFish.behaviour());
+					}
+				
+				@Test
+				public  void testDolphinSwim() {
+						
+						Dolphin dolphin = new Dolphin();
+						assertEquals("Dolphin Fish Can Swim",dolphin.swim());
 					}
 				
 

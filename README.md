@@ -48,3 +48,9 @@ Created <Class>ClownFish,<Class>Shark.
 <Class>ClownFish defines it’s behaviour. Refer <code>size(),color(),behaviour()<code>
 <Class>Shark defines it’s behaviour. Refer <code>size(),color(),behaviour()<code>
 Unit test is performed to test the results for the expected vs actuals.
+
+# 3. Dolphins are not exactly fish, yet, they are good swimmers#Solution Details
+
+Created <Class>Dolphin.
+Composition is implemented to invoke the methods of Class<Fish>.
+Unit test is performed to verify the results of expected vs actual
