@@ -36,21 +36,37 @@ Unit test is performed to test the results for the expected vs actuals.
 
 # Section-B
 
-# 1. In addition to the birds, can you model a fish? # Solution Details
+# 1. In addition to the birds, can you model a fish?
+
+# Solution Details
 
 Created <Class>Fish.
 Refer <code>walk(),sound(),swim()<code> of <Class>Fish
 Unit test is performed to verify the results.
 
-# 2. Can you specialize the fish as a Shark and as a Clownfish? #Solution Details
+# 2. Can you specialize the fish as a Shark and as a Clownfish?
+
+# Solution Details
 
 Created <Class>ClownFish,<Class>Shark.
 <Class>ClownFish defines it’s behaviour. Refer <code>size(),color(),behaviour()<code>
 <Class>Shark defines it’s behaviour. Refer <code>size(),color(),behaviour()<code>
 Unit test is performed to test the results for the expected vs actuals.
 
-# 3. Dolphins are not exactly fish, yet, they are good swimmers#Solution Details
+# 3. Dolphins are not exactly fish, yet, they are good swimmers
+
+# Solution Details
 
 Created <Class>Dolphin.
 Composition is implemented to invoke the methods of Class<Fish>.
 Unit test is performed to verify the results of expected vs actual
+
+# Section-D
+
+# 1. Can you model a butterfly?
+
+# SolutionDetails
+
+Created abstract class Class<Insect> with abstract method <code>fly()<code>
+Created Class<ButterFly>. Refer to <code>fly(),sound()<code>
+Unit test performed to verify the results of expected vs actual

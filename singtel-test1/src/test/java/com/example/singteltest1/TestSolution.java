@@ -180,6 +180,20 @@ public class TestSolution {
 						assertEquals("Dolphin Fish Can Swim",dolphin.swim());
 					}
 				
+				@Test
+				public  void testButterflyFly() {
+						
+						Insect butterFly = new ButterFly();
+						assertEquals("Butterfly can fly",butterFly.fly());
+					}
+				
+				@Test
+				public  void testButterflySound() {
+						
+					ButterFly butterFly = new ButterFly();
+					assertEquals("Butterfly makes sound",butterFly.sound());
+					}
+				
 
 
 
