@@ -2,11 +2,14 @@ package com.example.singteltest1;
 
 public class Parrot extends Bird {
 
-	Animal animal;
+	private Animal animal;
 
-	Parrot(Animal animal) {
+	public Parrot(Animal animal) {
 		this.animal = animal;
 
+	}
+
+	public Parrot() {
 	}
 
 	public String sound() {

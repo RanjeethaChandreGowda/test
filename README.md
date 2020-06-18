@@ -80,3 +80,18 @@ Unit test performed to verify the results of expected vs actual
 Created abstract class Class<Insect> with abstract method <code>fly()</code>
 Created Class<Caterpillar>. Refer to <code>fly(),walk()</code>
 Unit test performed to verify the results of expected vs actual
+
+# Section-E Counting Animals
+
+# 1. Can you share the code to count:
+
+a. how many of these animals can fly?
+b. how many of these animals can walk?
+c. how many of these animals can sing?
+d. how many of these animals can swim?
+
+## SolutionDetails
+
+Test class is created to get the count of number of animals which can fly,walk,sing,swim.
+<Class>TestCountAnimals and Refer <code>test()</code>
+Loggers are used to log the count info of animals.
