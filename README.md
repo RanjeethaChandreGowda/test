@@ -95,3 +95,12 @@ d. how many of these animals can swim?
 Test class is created to get the count of number of animals which can fly,walk,sing,swim.
 <Class>TestCountAnimals and Refer <code>test()</code>
 Loggers are used to log the count info of animals.
+
+# Bonus-Section
+
+# 1. Can you add a second language (if you know a language other than English) Use the rooster as a PoC for demonstrating this. For example, this is how the Rooster sounds differently depending on language. Please add the rooster sound in your native tongue.
+
+## SolutionDetails
+
+Necessary configuration is done to enable ResourceBundle
+Created separate property files for different languages

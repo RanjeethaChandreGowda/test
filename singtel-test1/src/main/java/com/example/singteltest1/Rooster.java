@@ -3,6 +3,9 @@ package com.example.singteltest1;
 public class Rooster extends Bird {
 
 	private Chicken chicken = new Chicken();
+	
+	
+	
 
 	public Chicken getChicken() {
 		return chicken;
@@ -19,7 +22,7 @@ public class Rooster extends Bird {
 	@Override
 	public String sound() {
 		
-		return "Cock-a-doodle-doo";
+		return "rooster.sound";
 	}
 
 	public String gender() {
