@@ -50,12 +50,12 @@ public class TestSolution {
 		assertEquals("Chicken can't fly because wings are clipped", bird.fly());
 	}
 
-	@Test
-	public void testRoosterSound() {
+	//@Test
+	//public void testRoosterSound() {
 
-		Bird bird = new Rooster();
-		assertEquals("Cock-a-doodle-doo", bird.sound());
-	}
+	//	Bird bird = new Rooster();
+	//	assertEquals("Cock-a-doodle-doo", bird.sound());
+	//}
 
 	@Test
 	public void testRoosterGender() {
@@ -89,14 +89,14 @@ public class TestSolution {
 		
 	}
 	
-	@Test
-	public void testParrotSoundLivesWithRooster() {
-		Animal animal = new Rooster();
-		Parrot parrot = new Parrot(animal);
-		assertEquals("Cock-a-doodle-doo",parrot.sound());
+	//@Test
+	//public void testParrotSoundLivesWithRooster() {
+	//	Animal animal = new Rooster();
+	//	Parrot parrot = new Parrot(animal);
+	//	assertEquals("Cock-a-doodle-doo",parrot.sound());
 		
 		
-	}
+	//}
 	
 	@Test
 	public void testParrotSoundWithDuck() {

@@ -1,5 +1,7 @@
 package com.example.singteltest1;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public abstract class Animal {
 
 	/**
@@ -7,6 +9,7 @@ public abstract class Animal {
 	 * 
 	 * @return
 	 */
+	@JsonProperty
 	public String walk() {
 		return "walk";
 	}

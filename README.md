@@ -104,3 +104,15 @@ Loggers are used to log the count info of animals.
 
 Necessary configuration is done to enable ResourceBundle
 Created separate property files for different languages
+
+# 2. Can you design a RESTful API for querying these animals?
+
+## SolutionDetails
+
+Implemented an API to list all the animals matching the criteria that can fly,walk,swim.
+Refer the sample request
+<code>{
+"walk":true,
+"fly":true,
+"swim":true
+}</code>
